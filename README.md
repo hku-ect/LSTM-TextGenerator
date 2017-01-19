@@ -5,7 +5,7 @@ An example of a LSTM network implementation to generate text on a word-for-word 
 LSTM stands for Long Short Term Memory, which is a form of network that you can train on input data to generate output of similar data. More information: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
 ## How to use
-The current example is trained on alice in wonderland (acquired from the Gutenberg Project), and ready to go. Use <b>lstm_generate.py</b> to generate runs of 400 words of varying diversities.
+The current example is trained on Alice in Wonderland, and ready to go. Use <b>lstm_generate.py</b> to generate runs of 400 words of varying diversities.
 
 You can provide new full-text input data in the root folder, and then replace the following line at the beginning of <b>lstm_train.py</b>:
 
@@ -15,9 +15,10 @@ fileName = "[YOUR FILENAME]"
 
 Then run the lstm_train.py file, and let it finish (this may take some time). You can edit the amount of "epochs" (training runs, default set to 40) to a smaller number to speed up training (but decrease quality of the lstm network). You can also increase it to get better results if you notice the output is poor. Make sure the input-text is long enough (the more data it has to train on, the better it will know what to do)!
 
-After training it will do a single generation run, and output a "hdf5" output file. Copy the filename, and edit the <b>lstm_generate.py</b> in a similar way to include your own input-data and the generated file:
+After training it will do a single generation run, and output a "hdf5" file. Copy the filename, and edit the <b>lstm_generate.py</b> in a similar way to include your own input-data and the generated file:
 
 <code>fileName = "[YOUR FILENAME]"</code>
+
 <code>modelData = "[GENERATED HDF5 FILENAME]</code>
 
 Then simply run the <b>lstm_generate.py</b> as many times as you want to generate more output text. You can edit the amount of text generated at line 94 (currently it generates 400 words):
