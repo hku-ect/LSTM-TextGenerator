@@ -1,0 +1,7 @@
+Links:
+
+http://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/
+http://stackoverflow.com/questions/36609920/tensorflow-using-lstms-for-generating-text
+https://www.gutenberg.org/ebooks/search/%3Fsort_order%3Ddownloads
+https://www.tensorflow.org/versions/master/tutorials/
+https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py
